@@ -1,0 +1,25 @@
+id: building
+type: fill
+metadata:
+  mapbox:group: '1444849364238.8171'
+source: openmaptiles
+source-layer: building
+minzoom: 13.5
+layout:
+  visibility: visible
+paint:
+  fill-color:
+    stops:
+      - - 13
+        - '#777777'
+      - - 15
+        - '#555555'
+      - - 17
+        - black
+  fill-outline-color:
+    stops:
+      - - 13
+        - '#777777'
+      - - 14
+        - rgba(0, 0, 0, 1)
+  fill-antialias: true

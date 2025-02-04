@@ -1,0 +1,35 @@
+id: railway-hatching
+type: line
+metadata:
+  mapbox:group: '1444849345966.4436'
+source: openmaptiles
+source-layer: transportation
+filter:
+  - all
+  - - '=='
+    - $type
+    - LineString
+  - - all
+    - - '!has'
+      - service
+    - - '!in'
+      - brunnel
+      - bridge
+      - tunnel
+    - - '=='
+      - class
+      - rail
+paint:
+  line-color: '#FFF'
+  line-dasharray:
+    - 4
+    - 4
+  line-width:
+    base: 1.4
+    stops:
+      - - 14.5
+        - 0
+      - - 15
+        - 3
+      - - 20
+        - 8

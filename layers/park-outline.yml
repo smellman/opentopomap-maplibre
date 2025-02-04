@@ -1,0 +1,22 @@
+id: park-outline
+type: line
+metadata:
+  mapbox:group: '1444849388993.3071'
+source: openmaptiles
+source-layer: park
+filter:
+  - '=='
+  - $type
+  - Polygon
+layout: {}
+paint:
+  line-color:
+    base: 1
+    stops:
+      - - 6
+        - hsla(96, 40%, 49%, 0.36)
+      - - 8
+        - hsla(96, 40%, 49%, 0.66)
+  line-dasharray:
+    - 3
+    - 3

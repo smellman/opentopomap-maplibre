@@ -1,0 +1,35 @@
+id: place-other
+type: symbol
+metadata:
+  mapbox:group: '1444849242106.713'
+source: openmaptiles
+source-layer: place
+filter:
+  - '!in'
+  - class
+  - city
+  - town
+  - village
+  - country
+  - continent
+layout:
+  text-letter-spacing: 0.1
+  text-size:
+    base: 1.2
+    stops:
+      - - 12
+        - 10
+      - - 15
+        - 14
+  text-font:
+    - Noto Sans Bold
+  text-field: |-
+    {name:latin}
+    {name:nonlatin}
+  text-transform: uppercase
+  text-max-width: 9
+  visibility: visible
+paint:
+  text-color: rgba(0, 0, 0, 1)
+  text-halo-width: 1.2
+  text-halo-color: rgba(255,255,255,0.8)

@@ -1,0 +1,16 @@
+id: landuse-industrial
+type: fill
+metadata:
+  mapbox:group: '1444849388993.3071'
+source: openmaptiles
+source-layer: landuse
+filter:
+  - all
+  - - '=='
+    - $type
+    - Polygon
+  - - '=='
+    - class
+    - industrial
+paint:
+  fill-color: hsla(49, 100%, 88%, 0.34)

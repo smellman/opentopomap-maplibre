@@ -1,0 +1,6 @@
+id: hills
+type: hillshade
+source: terrain
+paint:
+  hillshade-illumination-anchor: map
+  hillshade-exaggeration: 1

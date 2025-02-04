@@ -1,0 +1,39 @@
+id: contour_label
+type: symbol
+metadata: {}
+source: contours
+source-layer: contour
+filter:
+  - all
+  - - '=='
+    - $type
+    - LineString
+  - - in
+    - nth_line
+    - 100
+    - 50
+    - 10
+  - - '>'
+    - height
+    - 0
+layout:
+  text-size:
+    base: 1
+    stops:
+      - - 15
+        - 9.5
+      - - 20
+        - 12
+  text-allow-overlap: false
+  symbol-avoid-edges: true
+  text-ignore-placement: false
+  symbol-placement: line
+  text-padding: 10
+  text-rotation-alignment: map
+  text-field: '{height} m'
+  text-font:
+    - Noto Sans Regular
+paint:
+  text-color: hsl(0, 0%, 37%)
+  text-halo-color: hsla(0, 0%, 100%, 0.5)
+  text-halo-width: 1.5

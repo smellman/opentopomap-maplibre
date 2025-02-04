@@ -1,0 +1,19 @@
+id: contour
+type: line
+source: contours
+source-layer: contour
+filter:
+  - all
+  - - '!in'
+    - nth_line
+    - 10
+    - 5
+  - - '>'
+    - height
+    - 0
+layout:
+  visibility: visible
+paint:
+  line-color: '#d45500'
+  line-opacity: 0.3
+  line-width: 0.6
